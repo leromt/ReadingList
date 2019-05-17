@@ -11,6 +11,8 @@ import UIKit
 class BookDetailController: UITableViewController
 {
 
+    // this is attached to the "Cancel" button on the BookDetail Edit a Book view
+
     @IBAction func cancel(unwindSeque: UIStoryboardSegue){
 
 
