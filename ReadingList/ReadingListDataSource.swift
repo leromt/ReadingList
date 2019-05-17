@@ -16,6 +16,14 @@ class ReadingListDataSource: NSObject
     //instantiate this only when it's needed (lazy)
 
     lazy var readingList = storeController.fetchedReadingList
+
+    func book(at indexPath: IndexPath) -> Book{
+        return readingList.book(at: indexPath)
+    }
+
+    func save(){
+        storeController.save(readingList: readingList)
+    }
 }
 
 extension ReadingListDataSource: UITableViewDataSource

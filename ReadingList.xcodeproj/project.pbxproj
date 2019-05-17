@@ -24,6 +24,9 @@
 		2E4CA255228EF68600A53212 /* ReadingListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA24F228EF68600A53212 /* ReadingListStore.swift */; };
 		2E4CA256228EF68600A53212 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA250228EF68600A53212 /* Author.swift */; };
 		2E4CA258228F1A8A00A53212 /* ReadingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */; };
+		2E4CA25B228F3A4900A53212 /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CA259228F3A4900A53212 /* AddBook.storyboard */; };
+		2E4CA25D228F46C900A53212 /* EditBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA25C228F46C900A53212 /* EditBookController.swift */; };
+		2E4CA25F228F4A0B00A53212 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA25E228F4A0B00A53212 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		2E4CA24F228EF68600A53212 /* ReadingListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListStore.swift; sourceTree = "<group>"; };
 		2E4CA250228EF68600A53212 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListDataSource.swift; sourceTree = "<group>"; };
+		2E4CA25A228F3A4900A53212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
+		2E4CA25C228F46C900A53212 /* EditBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookController.swift; sourceTree = "<group>"; };
+		2E4CA25E228F4A0B00A53212 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +121,14 @@
 				2E4CA216228DC6B800A53212 /* AppDelegate.swift */,
 				2E4CA21A228DC6B800A53212 /* Main.storyboard */,
 				2E4CA230228E14D900A53212 /* BookDetail.storyboard */,
+				2E4CA259228F3A4900A53212 /* AddBook.storyboard */,
 				2E4CA21D228DC6BA00A53212 /* Assets.xcassets */,
 				2E4CA21F228DC6BA00A53212 /* LaunchScreen.storyboard */,
 				2E4CA222228DC6BA00A53212 /* Info.plist */,
 				2E4CA22C228E079D00A53212 /* ReadingListController.swift */,
 				2E4CA22E228E0C9500A53212 /* BookDetailController.swift */,
+				2E4CA25C228F46C900A53212 /* EditBookController.swift */,
+				2E4CA25E228F4A0B00A53212 /* Extensions.swift */,
 				2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */,
 			);
 			path = ReadingList;
@@ -237,6 +246,7 @@
 				2E4CA221228DC6BA00A53212 /* LaunchScreen.storyboard in Resources */,
 				2E4CA21E228DC6BA00A53212 /* Assets.xcassets in Resources */,
 				2E4CA232228E14D900A53212 /* BookDetail.storyboard in Resources */,
+				2E4CA25B228F3A4900A53212 /* AddBook.storyboard in Resources */,
 				2E4CA21C228DC6B800A53212 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4CA25D228F46C900A53212 /* EditBookController.swift in Sources */,
+				2E4CA25F228F4A0B00A53212 /* Extensions.swift in Sources */,
 				2E4CA22D228E079D00A53212 /* ReadingListController.swift in Sources */,
 				2E4CA22F228E0C9500A53212 /* BookDetailController.swift in Sources */,
 				2E4CA217228DC6B800A53212 /* AppDelegate.swift in Sources */,
@@ -308,6 +320,14 @@
 				2E4CA231228E14D900A53212 /* Base */,
 			);
 			name = BookDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		2E4CA259228F3A4900A53212 /* AddBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4CA25A228F3A4900A53212 /* Base */,
+			);
+			name = AddBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -6,9 +6,13 @@
 //  Copyright © 2019 Thomas Morel. All rights reserved.
 //
 import UIKit
+import ReadingListModel
 
 class ReadingListController: UITableViewController
 {
+
+
+    @IBOutlet var dataSource: ReadingListDataSource!
 
     // this is attached to the "Cancel" button on the ReadingList Add a Book view
     @IBAction func cancel(unwindSeque: UIStoryboardSegue){
@@ -20,7 +24,23 @@ class ReadingListController: UITableViewController
     // the is attached to the "Done" button on the ReadingList Add a Book view
     @IBAction func done(unwindSeque: UIStoryboardSegue){
 
+        dataSource.save()
+        tableView.reloadData()
+
     }
+
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let controller = segue.realDestination as? BookDetailController,
+        let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("no \(BookDetailController.self) available")
+        }
+
+        controller.book = dataSource.book(at: indexPath)
+
+    }
+
+
 }
 
 //extension ReadingListController
