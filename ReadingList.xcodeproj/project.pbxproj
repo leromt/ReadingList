@@ -23,6 +23,7 @@
 		2E4CA254228EF68600A53212 /* ReadingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA24E228EF68600A53212 /* ReadingList.swift */; };
 		2E4CA255228EF68600A53212 /* ReadingListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA24F228EF68600A53212 /* ReadingListStore.swift */; };
 		2E4CA256228EF68600A53212 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA250228EF68600A53212 /* Author.swift */; };
+		2E4CA258228F1A8A00A53212 /* ReadingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		2E4CA24E228EF68600A53212 /* ReadingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingList.swift; sourceTree = "<group>"; };
 		2E4CA24F228EF68600A53212 /* ReadingListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingListStore.swift; sourceTree = "<group>"; };
 		2E4CA250228EF68600A53212 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				2E4CA222228DC6BA00A53212 /* Info.plist */,
 				2E4CA22C228E079D00A53212 /* ReadingListController.swift */,
 				2E4CA22E228E0C9500A53212 /* BookDetailController.swift */,
+				2E4CA257228F1A8A00A53212 /* ReadingListDataSource.swift */,
 			);
 			path = ReadingList;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				2E4CA22D228E079D00A53212 /* ReadingListController.swift in Sources */,
 				2E4CA22F228E0C9500A53212 /* BookDetailController.swift in Sources */,
 				2E4CA217228DC6B800A53212 /* AppDelegate.swift in Sources */,
+				2E4CA258228F1A8A00A53212 /* ReadingListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

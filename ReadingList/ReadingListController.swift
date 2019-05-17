@@ -23,22 +23,22 @@ class ReadingListController: UITableViewController
     }
 }
 
-extension ReadingListController
-{
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Book Summary") else{
-            fatalError("bad cell")
-        }
-
-       cell.textLabel?.text = "Row \(indexPath.row + 1)"
-
-        return cell
-    }
-
-}
+//extension ReadingListController
+//{
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 100
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Book Summary") else{
+//            fatalError("bad cell")
+//        }
+//
+//       cell.textLabel?.text = "Row \(indexPath.row + 1)"
+//
+//        return cell
+//    }
+//
+//}

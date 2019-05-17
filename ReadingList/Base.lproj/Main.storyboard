@@ -48,7 +48,7 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="BfS-8R-oGx" id="BSh-TF-sxD"/>
+                            <outlet property="dataSource" destination="aDy-C6-Jdk" id="VtP-eq-as3"/>
                             <outlet property="delegate" destination="BfS-8R-oGx" id="FV6-tH-Mk0"/>
                         </connections>
                     </tableView>
@@ -61,6 +61,12 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7v-kx-bfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="aDy-C6-Jdk" customClass="ReadingListDataSource" customModule="ReadingList" customModuleProvider="target">
+                    <connections>
+                        <outlet property="storeController" destination="O2t-EV-wsr" id="ekr-rW-OyG"/>
+                    </connections>
+                </customObject>
+                <customObject id="O2t-EV-wsr" customClass="ReadingListStore" customModule="ReadingListModel"/>
             </objects>
             <point key="canvasLocation" x="-1402" y="-134"/>
         </scene>
